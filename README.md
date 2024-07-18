@@ -6,6 +6,8 @@ Project Report: Twitch Stream Data Analytics ETL Pipeline
 
 The objective of this project is to build an ETL (Extract, Transform, Load) pipeline to fetch stream data from the Twitch API, process the data, and store it in AWS S3 buckets. The pipeline leverages Apache Airflow on AWS EC2 Instance for workflow management and AWS IAM roles for secure communication between EC2 instances and S3 buckets. The end result is a comprehensive dataset that can be used for stream data analytics.
 
+![Architecture](images/Twitch_ETL_architecture.png)
+
 2\. Project Components 🔧
 -------------------------
 
