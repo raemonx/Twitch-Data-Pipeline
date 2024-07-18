@@ -8,7 +8,7 @@ from twitch_api_etl import run_twitch_etl
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2023, 12, 24),
+    'start_date': datetime(2024, 07, 17),
     'email': ['airflow@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,
