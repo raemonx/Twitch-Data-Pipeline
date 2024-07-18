@@ -13,14 +13,14 @@ default_args = {
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
-    'retry_delay': timedelta(minutes=1)
+    'retry_delay': timedelta(minutes=5),
 }
 
 dag = DAG(
     'twitch_dag',
     default_args=default_args,
     description='Twtich API data DAG',
-    schedule_interval=timedelta(days=1),
+    schedule_interval= schedule_interval='*/5 * * * *',
 )
 
 run = PythonOperator(
